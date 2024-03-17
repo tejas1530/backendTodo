@@ -1,4 +1,4 @@
-import { IRefreshToken } from './../../typings.d';
+import { IRefreshToken } from './typings';
 import mongoose from "mongoose";
 
 const tokenSchema = new mongoose.Schema<IRefreshToken>({

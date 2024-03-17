@@ -1,4 +1,4 @@
-import { IUser } from './../../typings.d';
+import { IUser } from './typings';
 import mongoose from "mongoose";
 
 
