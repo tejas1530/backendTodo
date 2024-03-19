@@ -1,4 +1,4 @@
-import auth from "./auth.routes";
+import auth from "./auth.routes.js";
 
 const router ={
     authRouter:auth

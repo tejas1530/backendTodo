@@ -1,8 +1,7 @@
-import { Request, Response } from "express";
-import db from "../model";
-import utils from "../utils";
+import db from "../model/index.js";
+import utils from "../utils/index.js";
 
-export const signUp= async(req:Request,res:Response):Promise<void>=>{
+export const signUp= async(req,res)=>{
     try {
         const {name,email ,phone  , password} =req.body
 
@@ -39,7 +38,7 @@ export const signUp= async(req:Request,res:Response):Promise<void>=>{
     }
 }
 
-export const login = async(req:Request, res:Response):Promise<void>=>{
+export const login = async(req,res)=>{
     try {
         const {email,password,phone}=req.body
         let user ;
@@ -82,7 +81,7 @@ export const login = async(req:Request, res:Response):Promise<void>=>{
     }
 }
 
-export const getRefreshToken = async(req:Request, res:Response):Promise<void>=>{
+export const getRefreshToken = async(req,res)=>{
     try {
         const refToken = req.params.token
         if(!refToken){
@@ -105,7 +104,7 @@ export const getRefreshToken = async(req:Request, res:Response):Promise<void>=>{
     }
 }
 
-export const logout = async(req:Request,res:Response):Promise<void>=>{
+export const logout = async(req,res)=>{
     try {
         const token = req.params.token
         if(!token){

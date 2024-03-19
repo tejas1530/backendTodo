@@ -1,4 +1,4 @@
-import { getRefreshToken, login, logout, signUp } from "../Auth/auth.controller";
+import { getRefreshToken, login, logout, signUp } from "../Auth/auth.controller.js";
 
 const controller = {
     RegisterUser:signUp,

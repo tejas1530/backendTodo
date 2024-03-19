@@ -1,5 +1,5 @@
-import Token from "./token.nodel";
-import User from "./user.model";
+import Token from "./token.model.js";
+import User from "./user.model.js";
 
 const db ={
     UserModel:User,

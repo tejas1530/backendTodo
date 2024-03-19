@@ -1,5 +1,5 @@
-import { comparePassword, hashPassword } from "./bcrypt";
-import { decodeToken, generateRefreshToken, generateToken, verifyRefreshToken, verifyToken } from "./jwt";
+import { comparePassword, hashPassword } from "./bcrypt.js";
+import { decodeToken, generateRefreshToken, generateToken, verifyRefreshToken, verifyToken } from "./jwt.js";
 
 const utils = {
     GenerateToken:generateToken,

@@ -1,7 +1,6 @@
-import { IRefreshToken } from './typings';
 import mongoose from "mongoose";
 
-const tokenSchema = new mongoose.Schema<IRefreshToken>({
+const tokenSchema = new mongoose.Schema({
     userId: {
         type: String,
         required: true,
