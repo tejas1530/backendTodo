@@ -1,14 +1,14 @@
 import Jwt from "jsonwebtoken";
 
 
-export const generateToken = (
-)=>{
+export const generateToken = (payload)=>{
     const token = Jwt.sign(payload,process.env.JWT_SECRET,{
         expiresIn:process.env.JWT_EXPIRES_IN,
     })
     return token
 }
 export const generateRefreshToken = (
+    payload
 )=>{
     const token = Jwt.sign(payload,process.env.JWT_REFRESH_SECRET,{
         expiresIn:process.env.JWT_REFRESH_EXPIRES_IN,
